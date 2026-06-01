@@ -1,0 +1,18 @@
+<div class="welcome">
+  <h1>🚀 Sample Rails App</h1>
+  <p>Your Rails <%= Rails.version %> app is running on Ruby <%= RUBY_VERSION %>.</p>
+  <ul>
+    <li>Environment: <strong><%= Rails.env %></strong></li>
+    <li>Port: <strong><%= ENV.fetch("PORT", 3000) %></strong></li>
+    <li>Health check: <a href="/up">/up</a></li>
+  </ul>
+</div>
+
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: #f6f7f9; }
+  .welcome { max-width: 640px; margin: 8vh auto; padding: 2.5rem; background: #fff;
+             border-radius: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .welcome h1 { margin-top: 0; }
+  .welcome li { margin: .35rem 0; }
+  a { color: #d30001; }
+</style>
